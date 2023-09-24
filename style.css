@@ -1,0 +1,28 @@
+body {}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portrait-container {
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.cat-portrait {
+    width: 100%;
+    height: auto;
+}
+
+.about-me-container {
+    border: 1px solid;
+    max-width: 600px;
+}
+
+@media (max-width: 800px) {
+    .about-me {
+        flex-direction: column;
+    }
+}
