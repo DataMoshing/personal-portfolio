@@ -1,9 +1,12 @@
-body {}
+body {
+    /* min-width: 600px; */
+}
 
 .about-me {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .portrait-container {
@@ -16,13 +19,45 @@ body {}
     height: auto;
 }
 
+section {
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
 .about-me-container {
     border: 1px solid;
     max-width: 600px;
 }
 
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-placeholder {
+    width: 250px;
+    height: 150px;
+    border: 1px solid;
+}
+
 @media (max-width: 800px) {
     .about-me {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .project-container {
+        display: flex;
         flex-direction: column;
     }
 }
