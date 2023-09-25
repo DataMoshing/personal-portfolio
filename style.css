@@ -53,6 +53,19 @@ section {
     .project-container {
         grid-template-columns: 1fr 1fr;
     }
+
+    .project-1,
+    .project-2,
+    .project-3,
+    .project-4,
+    .project-5,
+    .project-6 {
+        display: grid;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+    }
 }
 
 @media (max-width: 500px) {
