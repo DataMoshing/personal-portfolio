@@ -1,12 +1,11 @@
 body {
-    /* min-width: 600px; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .about-me {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .portrait-container {
@@ -28,19 +27,68 @@ section {
 }
 
 .about-me-container {
-    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.062) 0px 10px 20px, rgba(0, 0, 0, 0.151) 0px 2px 2px;
     max-width: 600px;
+    margin-left: .5rem;
 }
 
 .project-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: .5rem;
 }
 
-.project-placeholder {
-    width: 250px;
-    height: 150px;
-    border: 1px solid;
+.project-placeholder-1,
+.project-placeholder-2,
+.project-placeholder-3,
+.project-placeholder-4,
+.project-placeholder-5,
+.project-placeholder-6 {
+    width: 100%;
+    height: auto;
+}
+
+.project-text-placeholder {
+    display: flex;
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    margin: 0;
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4,
+.project-5,
+.project-6 {
+    box-shadow: rgba(0, 0, 0, 0.103) 0px 10px 20px, rgba(0, 0, 0, 0.151) 0px 2px 2px;
+}
+
+.project-placeholder-1 {
+    background-color: #faedcb;
+}
+
+.project-placeholder-2 {
+    background-color: #c9e4de;
+}
+
+.project-placeholder-3 {
+    background-color: #c6def1;
+}
+
+.project-placeholder-4 {
+    background-color: #dbcdf0;
+}
+
+.project-placeholder-5 {
+    background-color: #f2c6de;
+}
+
+.project-placeholder-6 {
+    background-color: #f7d9c4;
 }
 
 @media (max-width: 800px) {
@@ -65,6 +113,10 @@ section {
         justify-items: center;
         align-content: space-evenly;
         align-items: center;
+    }
+
+    .project-text-placeholder {
+        width: auto;
     }
 }
 
