@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
 }
 
 .about-me {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: underline;
 }
 
 .portrait-container {
@@ -16,6 +24,7 @@ body {
 .cat-portrait {
     width: 100%;
     height: auto;
+    border-radius: 1rem;
 }
 
 section {
@@ -28,7 +37,6 @@ section {
 
 .about-me-container {
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.062) 0px 10px 20px, rgba(0, 0, 0, 0.151) 0px 2px 2px;
     max-width: 600px;
     margin-left: .5rem;
 }
@@ -37,6 +45,25 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: .5rem;
+}
+
+.github-icon,
+.external-link-icon,
+.map-marker-icon,
+.phone-icon,
+.email-icon {
+    width: 25px
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h3,
+.project-description {
+    margin: 1rem 1rem 0;
 }
 
 .project-placeholder-1,
@@ -65,6 +92,8 @@ section {
 .project-5,
 .project-6 {
     box-shadow: rgba(0, 0, 0, 0.103) 0px 10px 20px, rgba(0, 0, 0, 0.151) 0px 2px 2px;
+    max-width: 275px;
+    min-height: 260px;
 }
 
 .project-placeholder-1 {
@@ -89,6 +118,36 @@ section {
 
 .project-placeholder-6 {
     background-color: #f7d9c4;
+}
+
+.location-placeholder,
+.phone-number-placeholder,
+.email-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 300px;
+}
+
+@media(min-width: 2560px) {
+    section {
+        margin-top: 3rem;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -118,11 +177,25 @@ section {
     .project-text-placeholder {
         width: auto;
     }
+
+    .github-icon,
+    .external-link-icon {
+        margin-left: 1rem;
+    }
+
+    .contact-placeholder {
+        margin-left: 1rem;
+    }
 }
+
 
 @media (max-width: 500px) {
     .project-container {
         display: flex;
         flex-direction: column;
+    }
+
+    .contact-placeholder {
+        margin-left: 1rem;
     }
 }
